@@ -58,6 +58,40 @@ namespace CodePractice
                 Console.WriteLine("Your number is odd.");
             }
             Console.ReadKey();
+
+            //while loops practice: fizzbuzz
+
+            int fbnum = 0;
+            while (fbnum <= 100)
+            {
+                if (fbnum % 15 == 0)
+                {
+                    Console.WriteLine("FizzBuzz");
+                }
+                else if (fbnum % 5 == 0)
+                {
+                    Console.WriteLine("Buzz");
+                }
+                else if (fbnum % 3 == 0)
+                {
+                    Console.WriteLine("Fizz");
+                }
+                else
+                {
+                    Console.WriteLine(fbnum);
+                }
+                fbnum++;
+            }
+            Console.ReadKey();
+
+            // arrays and foreach loops
+
+            string[] numbers = new string[6] { "a", "b", "c", "d", "e", "f" };
+            foreach (string letter in numbers)
+            {
+                Console.WriteLine($"The letter is now {letter}.");
+            }
+            Console.ReadKey();
         }
     }
 }
