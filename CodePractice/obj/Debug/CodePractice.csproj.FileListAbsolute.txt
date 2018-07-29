@@ -1,0 +1,7 @@
+C:\Users\v-miyan\source\repos\CodePractice\CodePractice\bin\Debug\CodePractice.exe.config
+C:\Users\v-miyan\source\repos\CodePractice\CodePractice\bin\Debug\CodePractice.exe
+C:\Users\v-miyan\source\repos\CodePractice\CodePractice\bin\Debug\CodePractice.pdb
+C:\Users\v-miyan\source\repos\CodePractice\CodePractice\obj\Debug\CodePractice.csprojAssemblyReference.cache
+C:\Users\v-miyan\source\repos\CodePractice\CodePractice\obj\Debug\CodePractice.csproj.CoreCompileInputs.cache
+C:\Users\v-miyan\source\repos\CodePractice\CodePractice\obj\Debug\CodePractice.exe
+C:\Users\v-miyan\source\repos\CodePractice\CodePractice\obj\Debug\CodePractice.pdb
