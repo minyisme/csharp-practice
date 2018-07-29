@@ -131,6 +131,112 @@ namespace CodePractice
                     break;
             }
             Console.ReadKey();
+
+            // calling methods
+
+            CountToTen();
+            Console.ReadKey();
+
+            string userInput = ReadUserInput();
+            Console.WriteLine(userInput);
+            Console.ReadKey();
+
+            DisplayUserInput(userInput);
+            Console.ReadKey();
+
+            // calling methods - putting it together
+
+            int[] arrayOfInts = GenerateArray();
+            int[] reversedArrayOfInts = ReverseArray(arrayOfInts);
+            DisplayArray(reversedArrayOfInts);
+            Console.ReadKey();
+
+            // calling methods - fibonacci
+            Console.WriteLine(DisplayFibonacci(8));
+            Console.WriteLine(DisplayFibonacci(5));
+            Console.WriteLine(DisplayFibonacci(3));
+            Console.WriteLine(DisplayFibonacci(1));
+            Console.ReadKey();
+
+        }
+
+        // methods
+        static void CountToTen()
+        {
+            for(int index = 1; index <= 10; index++)
+            {
+                Console.WriteLine(index);
+            }
+        }
+
+        // methods - return
+
+        static string ReadUserInput()
+        {
+            Console.WriteLine("Input something: ");
+            return Console.ReadLine();
+        } 
+        
+        // methods - parameter
+        
+        static void DisplayUserInput(string inputString)
+        {
+            Console.WriteLine($"Your inputed message is {inputString}.");
+        }
+
+        // methods - putting it together
+
+        /// <summary>
+        /// generates an array of ints 1 - 5
+        /// </summary>
+        /// <returns>array length 5 of ints</returns>
+        static int[] GenerateArray()
+        {
+            var intArray = new int[5] {1, 2, 3, 4, 5};
+            return intArray;
+        }
+
+        /// <summary>
+        /// reverses array
+        /// </summary>
+        /// <param name="array">array of ints</param>
+        /// <returns>reversed array of ints</returns>
+        static int[] ReverseArray(int[] array)
+        {
+            for (int i = 0; i <= array.Length/2; i++)
+            {
+                int temp = array[i];
+                array[i] = array[array.Length-i-1];
+                array[array.Length-i-1] = temp;
+            }
+
+            return array;
+        }
+
+        /// <summary>
+        /// prints to console each int in array
+        /// </summary>
+        /// <param name="reversedArray">array of ints</param>
+        static void DisplayArray(int[] reversedArray)
+        {
+            foreach (int i in reversedArray)
+            {
+                Console.WriteLine(i);
+            }
+        }
+
+        // method fibonacci
+
+        static int DisplayFibonacci(int nthNum)
+        {
+            if (nthNum == 1 || nthNum == 2)
+            {
+                return 1;
+            }
+            else
+            {
+                return (DisplayFibonacci(nthNum - 1) + DisplayFibonacci(nthNum - 2));
+            }
         }
     }       
 }
